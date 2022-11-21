@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset = "UTF-8">
+<title> 함수 </title>
+<script>
+	function sum(num1, num2) {
+		var sum = arguments[0] + arguments[1] + arguments[2];
+
+		document.write(sum);
+		document.write(num1);
+		document.write(num2);
+	}
+
+	sum(10, 20, 30, "<br>");
+	
+	function sum() {
+		var sum = 0;
+
+		for(var i = 0; i < arguments.length; i++) {
+			sum += arguments[i];
+		}
+
+		document.write(sum);
+	}
+
+	sum(10, 20, 30, "010");
+</script>
+</head>
+<body>
+</body>
+</html>

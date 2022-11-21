@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 종합실습1-2 </title>
+<script>
+		var first = 1200;
+		var sencond = 1300;
+		var third = 1000;
+		var fourth = prompt("4분기 판매량은?", "0");
+		var avgSales1 = ((first+sencond+third) / 3);
+		document.write(avgSales1, "<br>");
+		var avgSales2 = ((first+sencond+third+fourth) / 4); //평균 판매량 
+		document.write(avgSales2, "<br>");
+		var msg = avgSales1 <= fourth ? "판매량이 평균 이상입니다." : "판매량이 평균 미달입니다.";
+		
+		var result =  msg;
+		document.write(result);
+</script>
+</head>
+<body>
+</body>
+</html>

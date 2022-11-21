@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 사용자 정의 객체 </title>
+<script>
+	var tv = new Object();
+	tv.color = "white";
+	tv.price = 30000;
+	tv.info = function () {
+		document.write("tv 색상:" + this.color, "<br>");
+		document.write("tv 가격:" + this.price, "<br>");
+	}
+
+	var car = {
+		color: "black",
+		price: 5000000,
+		info: function () {
+			document.write("tv 색상:" + this.color, "<br>");
+			document.write("tv 가격:" + this.price, "<br>");
+		}
+	}
+
+	document.write("<h1>tv 객체 메서드 호출</h1>");
+	tv.info();
+
+	document.write("tv 접근" + tv, "<br>");
+	document.write("tv info 접근" + tv.info, "<br>");
+	document.write("tv color 접근 " + tv.color, "<br>");
+	document.write("tv price 접근 " + tv.price, "<br>");
+	document.write("tv 타입 " + typeof tv, "<br>");
+	document.write("tv info 타입 " + typeof tv.info, "<br>");
+	document.write("tv color 타입 " + typeof tv.color, "<br>");
+	document.write("tv price 타입 " + typeof tv.price, "<br>");
+
+	document.write("<h1>car 객체 메서드 호출</h1>");
+    car.info();
+</script>
+</head>
+<body>
+</body>
+</html>
